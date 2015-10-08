@@ -1,0 +1,28 @@
+.container {
+	margin:0 auto;
+}
+/*nav bar */
+ul {
+	list-style-type: none; 
+	padding-left: 0;
+	float:right;
+}
+
+h3 {
+
+}
+
+li {
+	display:inline-block;
+	text-align:center;
+	float:left;
+	margin:0 .5em;
+}
+
+button {
+	width:100%;
+	display:inline-block;
+}
+
+/*nav bar */
+

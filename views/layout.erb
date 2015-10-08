@@ -1,39 +1,49 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title><%= @title %></title>
-<link href="/css/style.css" rel="stylesheet"/>
-</head>
-
-<body>
-[about, treatments, patientinfo, form]
-	<%
-		nav = ["Home", "Our Physicians", "Treatments", "Patient Information", "Contact Us"] 
-		pages = ["/", "about", "treatments", "patientinfo", "form"] 
-	%>
-
-	<ul style="list-style-type: none; padding-left: 0">
-
-	<!-- start ruby -->	
-	<% nav.each_with_index do |page, index| %>
-		<li style="display:inline-block">
-				<a href="<%= pages[index] %>">
-					<button>
-					<%= page %>
-					</button>
-				</a>
-		</li>
-	<% end %>
-	<!-- end ruby -->
-
-	</ul>
-
-	<!-- start ruby -->
-	<%= yield %>	
-	<!-- end ruby -->
-	<hr / >
-<footer style="text-align:center">Wow This is our footer and it's at the bottom </footer>
+	<head>
+		<meta charset="utf-8">
+		<title><%= @title %></title>
+		<link href="/css/style.css" rel="stylesheet"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<%
+			nav = ["Home", "About Us", "Treatments", "Patient Info", "Contact Us"]
+			pages = ["/", "about","treatments", "patientinfo", "form"]
+			%>
+			<div class="row" >
+				<div class="two columns">
+					<h3><em>Dr. Elias</em></h3>
+				</div>
+				<div class="ten columns">
+					<ul>
+						<!-- start ruby -->
+						<% nav.each_with_index do |page, index| %>
+						<li>
+							<a href="<%= pages[index] %>">	
+							<button>
+								<%= page %>
+							</button>
+							</a>
+						</li>
+						<% end %>
+						<!-- end ruby -->
+					</ul>
+				</div>
+			</div>
+			
+			<!-- start ruby -->
+			<div class="row">
+				<div class="nine columns">
+					<%= yield %>
+			<!-- end ruby -->
+				</div>
+				<div class="three columns">
+				</div>
+			</div>
+			<hr / >
+		<footer style="text-align:center">Wow This is our footer and it's at the bottom </footer>
+	</div>
 </body>
 </html>

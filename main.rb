@@ -4,10 +4,12 @@ get '/' do
 	@title= "Home"
 	erb :home
 end
-
 get '/about' do 
-	@title = "Our Physicians"
+	@title= "About Us"
 	erb :about
+end
+
+
 end
 
 get '/treatments' do 
