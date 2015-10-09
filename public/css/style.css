@@ -26,10 +26,18 @@ button {
 
 /*nav bar */
 
+
+/* Home page styling*/
+
 .row-home {
 	padding: 20px 0px;
 }
 
+/* end Home page styling*/
+
+
+
+/*Treatments page styling*/
 .treatments-quote{
 	text-align: center;
 }
@@ -37,3 +45,14 @@ button {
 .treatments-list ul li{
 	display: inline-block;
 }
+
+.treatments{
+	padding: 20px 0px;
+}
+/*Treatments page styling*/
+
+
+
+
+
+
