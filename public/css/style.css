@@ -1,6 +1,8 @@
 .container {
 	margin:0 auto;
 }
+
+
 /*nav bar */
 .nav ul {
 	list-style-type: none; 
@@ -25,4 +27,38 @@ button {
 }
 
 /*nav bar */
+
+
+/* Home page styling*/
+
+.row-home {
+	padding: 20px 0px;
+}
+
+/* end Home page styling*/
+
+
+
+/*Treatments page styling*/
+.treatments-quote{
+	text-align: center;
+}
+
+.treatments-list ul li{
+	display: inline-block;
+}
+
+.treatments{
+	padding: 20px 0px;
+}
+/*Treatments page styling*/
+
+.content {
+	background-color: gray;
+}
+
+
+
+
+
 
