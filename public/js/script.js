@@ -1,8 +1,10 @@
-$('.bxslider').bxSlider({
-  mode: 'horizontal',
-  useCSS: false,
-  infiniteLoop: true,
-  easing: 'easeOutElastic',
-  hideControlOnEnd: true,
-  speed: 2000
+$( document ).ready(function() {
+
+	$('.bxslider').bxSlider({
+  		mode: 'horizontal',
+  		useCSS: true,
+  		infiniteLoop: true,
+  		hideControlOnEnd: false,
+  		speed: 1000
+	});
 });

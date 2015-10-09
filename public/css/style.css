@@ -39,6 +39,15 @@ button {
 
 /*nav bar */
 
+/*Slider Style*/
+.bxslider img {
+	margin:0 auto;
+	width:100%;
+}
+
+.bxslider {
+	height:100%;
+}
 
 /* Home page styling*/
 
@@ -154,4 +163,6 @@ input:focus, textarea:focus {
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
+
+
 
