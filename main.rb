@@ -9,9 +9,6 @@ get '/about' do
 	erb :about
 end
 
-
-end
-
 get '/treatments' do 
 	@title = "Treatments"
 	erb :treatments
