@@ -12,7 +12,6 @@
 }
 
 h3 {
-
 }
 
 .nav ul li {
@@ -45,11 +44,8 @@ button {
     width:100%;
 }
 
-.bxslider {
-    height:100%;
-}
 .bx-wrapper, .bx-viewport {
-    height: 300px !important; 
+    height: 450px !important; 
 }
 
 /* Home page styling*/
@@ -170,4 +166,23 @@ input:focus, textarea:focus {
 .footer ul li{
     list-style-type: none;
     margin-left: 80px;
+}
+
+@media (max-width: 500px) {
+    h3 {
+        display: block;
+        margin-top: 0 auto;
+    }
+
+    .nav ul li {
+    display:inline-block;
+    float:left;
+    width: 24%;
+    margin:0 .5em;
+    }
+
+    .bxslider img {
+    height: 100%;
+    }
+
 }
