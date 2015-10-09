@@ -24,3 +24,7 @@ get '/form' do
 	erb :form
 end
 
+post '/mail' do
+	@title = "Sent Form"
+	rb :mail
+end

@@ -1,0 +1,21 @@
+<h1>Contact Us</h1>
+<form method="post" action="/mail.rb">
+	
+	<p class="name">
+		<input name="from_name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+	</p>
+	
+	<p class="email">
+		<input name="from_email" type="text" id="email" placeholder="Email" />
+	</p>
+	
+	<p class="text">
+		<textarea name="text" id="comment" placeholder="Send us a message!"></textarea>
+	</p>
+	
+	
+	<div class="submit">
+		<input type="submit" value="SEND" id="button-blue"/>
+		<div class="ease"></div>
+	</div>
+</form>
