@@ -21,10 +21,10 @@
 						<!-- start ruby -->
 						<% nav.each_with_index do |page, index| %>
 						<li>
-							<a href="<%= pages[index] %>">	
-							<button>
+							<a href="<%= pages[index] %>">
+								<button>
 								<%= page %>
-							</button>
+								</button>
 							</a>
 						</li>
 						<% end %>
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<div class="Row">
-			<!-- This is the slider HTML -->
+				<!-- This is the slider HTML -->
 				<div class="twelve columns" style="background-color:green; height:300px;">
 				</div>
 			</div>
@@ -41,30 +41,29 @@
 			<div class="row content">
 				<div class="twelve columns">
 					<%= yield %>
-			<!-- end ruby -->
+					<!-- end ruby --><hr />
 				</div>
 			</div>
 			<div class="row">
-				<div class="one-third column">
-					<h2>Visit Us</h2>
+				<div class="one-third column footer">
+					<h4>Visit Us</h4>
 					<p>2839 Route 10 East,<br>
-					Morris Plains, NJ, 07950<br>
-					Tel: 973-292-9248<br>
-​				Mail:info@eliasmds.com</p>
+						Morris Plains, NJ, 07950<br>
+						Tel: 973-292-9248<br>
+					​				Mail:info@eliasmds.com</p>
 				</div>
-				<div class="one-third column">
-					<h2>Office Hours</h2>
+				<div class="one-third column footer">
+					<h4>Office Hours</h4>
 					<p>
 						By appointment only including Saturdays. We also offer late evening hours on Tuesdays and Thursdays
 					</p>
-				 </div>
-				<div class="one-third column">
-				<h2>Insurance</h2>
-				<img src="/images/insurance.jpg" />
-				 </div>
+				</div>
+				<div class="one-third column footer">
+					<h4>Insurance</h4>
+					<img src="/images/insurance.jpg" />
+				</div>
 			</div>
-			</div>
-		<footer style="text-align:center">Wow This is our footer and it's at the bottom </footer>
+		</div>
 	</div>
 </body>
 </html>
