@@ -21,6 +21,16 @@ h3 {
 	margin:0 .5em;
 }
 
+.insurance-images img{
+	height: 40px;
+	padding: 5px;
+}
+
+.insurance-images{
+	text-align: center;
+	margin: 0 auto;
+}
+
 button {
 	width:100%;
 	display:inline-block;
