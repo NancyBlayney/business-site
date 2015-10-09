@@ -2,7 +2,7 @@
 	margin:0 auto;
 }
 /*nav bar */
-ul {
+.nav ul {
 	list-style-type: none; 
 	padding-left: 0;
 	float:right;
@@ -12,7 +12,7 @@ h3 {
 
 }
 
-li {
+.nav ul li {
 	display:inline-block;
 	text-align:center;
 	float:left;
@@ -26,3 +26,14 @@ button {
 
 /*nav bar */
 
+.row-home {
+	padding: 20px 0px;
+}
+
+.treatments-quote{
+	text-align: center;
+}
+
+.treatments-list ul li{
+	display: inline-block;
+}
