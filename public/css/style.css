@@ -172,6 +172,6 @@ input:focus, textarea:focus {
 
 .footer ul li{
     list-style-type: none;
-    margin-left: 80px;
+    text-align:center;
 }
 
