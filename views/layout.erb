@@ -1,70 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title><%= @title %></title>
-		<link href="/css/style.css" rel="stylesheet"/>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="container">
-			<%
-			nav = ["Home", "About Us", "Treatments", "Patient Info", "Contact Us"]
-			pages = ["/", "about","treatments", "patientinfo", "form"]
-			%>
-			<div class="row" >
-				<div class="two columns">
-					<h3><em>Dr. Elias</em></h3>
-				</div>
-				<div class="ten columns">
-					<ul>
-						<!-- start ruby -->
-						<% nav.each_with_index do |page, index| %>
-						<li>
-							<a href="<%= pages[index] %>">	
-							<button>
-								<%= page %>
-							</button>
-							</a>
-						</li>
-						<% end %>
-						<!-- end ruby -->
-					</ul>
-				</div>
-			</div>
-			<div class="Row">
-			<!-- This is the slider HTML -->
-				<div class="twelve columns" style="background-color:green; height:300px;">
-				</div>
-			</div>
-			<!-- start ruby -->
-			<div class="row">
-				<div class="twelve columns">
-					<%= yield %>
-			<!-- end ruby -->
-				</div>
-			<div class="row">
-				<div class="one-third column">
-					<h2>Visit Us</h2>
-					<p>2839 Route 10 East,
-Morris Plains, NJ, 07950
-Tel: 973-292-9248
-​Mail:info@eliasmds.com</p>
-				</div>
-				<div class="one-third column">
-					<h2>Office Hours</h2>
-					<p>
-						By appointment only including Saturdays
-We also offer late evening hours on Tuesdays & Thursdays
-					</p>
-				 </div>
-				<div class="one-third column">
-				<h2>Insurance</h2>
-				<img src="/images/insurance.jpg" />
-				 </div>
-			</div>
-			</div>
-		<footer style="text-align:center">Wow This is our footer and it's at the bottom </footer>
-	</div>
+<head>
+    <meta charset="utf-8">
+
+    <title><%= @title %></title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href=
+    "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    rel="stylesheet">
+    <script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/js/jssor.js" type="text/javascript"></script>
+    <script src="/js/jssor.slider.js" type="text/javascript"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <%
+        nav = ["Home", "About Us", "Treatments", "Patient Info", "Contact Us"]
+        pages = ["/", "about","treatments", "patientinfo", "form"]
+        %>
+
+        <div class="row">
+            <div class="two columns">
+                <h3><em>Dr. Elias</em></h3>
+            </div>
+
+            <div class="ten columns">
+                <ul>
+                    <!-- start ruby -->
+                    <% nav.each_with_index do |page, index| %>
+
+                    <li>
+                        <a href=
+                        "%3C%=%20pages[index]%20%%3E"><button><%= page %></button></a>
+                    </li><% end %><!-- end ruby -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="Row">
+            <!-- This is the slider HTML -->
+            <div class="twelve columns" id="slider1_container">
+                <!-- Slides Container -->
+                <div u="slides" id="slider1_slides">
+                    <div>
+                        <img u="image" src="../images/slider1.jpg" />
+                        <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                            text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                                color: #FFFFFF;">Touch Swipe Slider
+                        </div>
+                        <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                            text-align: left; line-height: 36px; font-size: 30px;
+                                color: #FFFFFF;">
+                                Build your slider with anything, includes image, content, text, html, photo, picture
+                        </div>
+                    </div>
+                    <div>
+                        <img u="image" src="../images/blue.jpg" />
+                        <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                            text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                                color: #FFFFFF;">Touch Swipe Slider
+                        </div>
+                        <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                            text-align: left; line-height: 36px; font-size: 30px;
+                                color: #FFFFFF;">
+                                Build your slider with anything, includes image, content, text, html, photo, picture
+                        </div>
+                    </div>
+                </div>
+                <!-- Arrow Left -->
+                <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+                </span>
+                <!-- Arrow Right -->
+                <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+                </span>
+                <!--#endregion Arrow Navigator Skin End -->
+                <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+        </div>
+
+            <!-- start ruby -->
+            <div class="row">
+                <div class="twelve columns">
+                    <%= yield %>
+                    <!-- end ruby -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="one-third column">
+                    <h2>Visit Us</h2>
+
+                    <p>2839 Route 10 East, Morris Plains, NJ, 07950 Tel:
+                    973-292-9248 ​Mail:info@eliasmds.com</p>
+                </div>
+
+                <div class="one-third column">
+                    <h2>Office Hours</h2>
+
+                    <p>By appointment only including Saturdays We also offer
+                    late evening hours on Tuesdays & Thursdays</p>
+                </div>
+
+                <div class="one-third column">
+                <h2>Insurance</h2><img src="/images/insurance.jpg"></div>
+            </div>
+        </div>
+
+        <footer style="text-align:center">
+            Wow This is our footer and it's at the bottom
+        </footer>
+    </div>
+    <script>init_jssor_slider1("slider1_container");</script>
 </body>
 </html>
