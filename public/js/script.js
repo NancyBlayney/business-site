@@ -5,6 +5,8 @@ $( document ).ready(function() {
   		useCSS: true,
   		infiniteLoop: true,
   		hideControlOnEnd: false,
-  		speed: 1000
+  		speed: 1000,
+  		auto:true,
+  		pause:2000
 	});
 });

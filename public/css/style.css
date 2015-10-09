@@ -48,6 +48,9 @@ button {
 .bxslider {
 	height:100%;
 }
+.bx-wrapper, .bx-viewport {
+    height: 300px !important; 
+}
 
 /* Home page styling*/
 
