@@ -168,7 +168,10 @@ input:focus, textarea:focus {
     color: #FFF;
     border-radius: 3px;
     -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;}
 
-
+.footer ul li{
+    list-style-type: none;
+    margin-left: 80px;
+}
 
