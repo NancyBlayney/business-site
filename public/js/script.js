@@ -9,5 +9,10 @@ $( document ).ready(function() {
   		auto:true,
   		pause:2000
 	});
-});
 
+	$(function(){
+  		$('#nav').click(function() {
+    		$(this).toggleClass('open');
+  		});
+	});
+});
