@@ -180,3 +180,7 @@ input:focus, textarea:focus {
     text-align:center;
 }
 
+iframe {
+    height:60em;
+    width:100%;
+}
