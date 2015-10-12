@@ -1,61 +1,86 @@
+html {
+    background-color: #F0F0F5;
+}
+
+/* nav bar */
 .container {
-	margin:0 auto;
-    font-family: helvetica;
+  position: relative;
+  margin: 0 auto;
+  width: 94%;
+  max-width: 960px;
+  font-family: helvetica, sans-serif;
 }
 
-
-/*nav bar */
-.nav ul {
-	list-style-type: none; 
-	padding-left: 0;
-	float:right;
+.content {
+  position: relative;
 }
 
-h3 {
-
+#header {
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #39C4F1;
+  color: white;
+  margin-top: -0.5em;
 }
 
-.nav ul li {
-	display:inline-block;
-	text-align:center;
-	float:left;
-	margin:0 .5em;
+h1 {
+    font-size: 4rem !important;
+    margin-top: 0.6rem !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+#nav {
+  position: absolute;
+  right: 0;
 }
 
-.insurance-images img{
-	height: 35px;
-	padding: 5px;
+#nav ul li {
+    float: left;
+    list-style: none;
 }
 
-.insurance-images{
-	text-align: center;
-	margin: 0 auto;
+#nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 10px;
 }
 
 button {
-	width:100%;
-	display:inline-block;
+    width:100%;
+    display:inline-block;
 }
 
+.insurance-images img{
+    height: 35px;
+    padding: 5px;
+}
+
+.insurance-images{
+    text-align: center;
+    margin: 0 auto;
+}
 /*nav bar */
 
 /*Slider Style*/
 .bxslider img {
-	margin:0 auto;
-	width:100%;
+    margin:0 auto;
+    width:100%;
 }
 
-.bxslider {
-	height:100%;
-}
-.bx-wrapper, .bx-viewport {
-    height: 300px !important; 
+.bx-wrapper, .bx-viewport, .bxslider img {
+    max-height: 350px !important; 
 }
 
 /* Home page styling*/
 
 .row-home {
-	padding: 20px 0px;
+    padding: 20px 0px;
 }
 
 /* end Home page styling*/
@@ -64,15 +89,15 @@ button {
 
 /*Treatments page styling*/
 .treatments-quote{
-	text-align: center;
+    text-align: center;
 }
 
 .treatments-list ul li{
-	display: inline-block;
+    display: inline-block;
 }
 
 .treatments{
-	padding: 20px 0px;
+    padding: 20px 0px;
 }
 /*Speech Bubble Styles*/
  
@@ -115,8 +140,15 @@ button {
 
 /*font styles*/
 .footer h4 {
+    text-align:center;
 	text-align:center;
 }
+
+iframe {
+    height:60em;
+    width:100%;
+}
+
 form {
 	text-align:center;
 	margin: 2rem 0 0 0;
@@ -126,13 +158,14 @@ form {
     padding:3rem;
     margin:0 auto;
 }
+
 .one-third p {
-	text-align:center;
+    text-align:center;
 }
 
 .page-heading {
-	text-align:center;
-	margin:1rem 0 1rem 0;
+    text-align:center;
+    margin:1rem 0 1rem 0;
 }
 
 
@@ -177,10 +210,75 @@ input:focus, textarea:focus {
 
 .footer ul li{
     list-style-type: none;
-    text-align:center;
+    margin-left: 80px;
 }
 
-iframe {
-    height:60em;
-    width:100%;
+@media (max-width: 850px) {
+
+    #header .container {
+    width: 100%;
+    }
+
+    #header h1 {
+    left: 3%;
+    }
+
+    #nav {
+    width: 100%;
+    top: 60px;
+    }
+
+    #nav:before {
+    content: '\2630';
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: -50px;
+    line-height: 40px;
+    cursor: pointer;
+    }
+
+    #nav ul {
+    background: #39C4F1;
+    width: 100%;
+    }
+    
+    #nav ul li {
+    float: none;
+    }
+  
+    #nav ul li a {
+    padding: 10px 3%;
+    line-height: 20px;
+    border-top: 1px solid #F0F0F5;
+    }
+
+    .bxslider img {
+        margin:0 auto;
+        width:100%;
+    }
+
+    .bx-wrapper, .bx-viewport, .bxslider img {
+        z-index: -1;
+        max-height: 350px !important; 
+    }   
+
+    /* Transition */
+    #nav ul {
+    transition: 350ms;
+    -moz-transition: 350ms;
+    -webkit-transition: 350ms;
+    transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -moz-transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
+    transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+    }
+
+    #nav.open ul {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
+    }
 }

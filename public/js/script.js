@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+  
+  $('#nav').click(function() {
+    $(this).toggleClass('open');
+    });
 
 	$('.bxslider').bxSlider({
   		mode: 'horizontal',
