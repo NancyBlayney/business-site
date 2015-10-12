@@ -7,10 +7,11 @@ $( document ).ready(function() {
 	$('.bxslider').bxSlider({
   		mode: 'horizontal',
   		useCSS: true,
-  		infiniteLoop: true,
+  		infiniteLoop: false,
   		hideControlOnEnd: false,
-  		speed: 1000,
+  		speed: 3000,
   		auto:true,
-  		pause:2000
+  		pause:4000,
+  		controls:false
 	});
 });

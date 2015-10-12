@@ -25,6 +25,8 @@ get '/form' do
 	erb :form
 end
 
+
+
  post '/mail' do
  	api_key = ENV['MANDRILL_APIKEY']
     m = Mandrill::API.new "#{api_key}"

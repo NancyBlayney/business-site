@@ -141,6 +141,22 @@ button {
 /*font styles*/
 .footer h4 {
     text-align:center;
+	text-align:center;
+}
+
+iframe {
+    height:60em;
+    width:100%;
+}
+
+form {
+	text-align:center;
+	margin: 2rem 0 0 0;
+    border: 2px solid lightgrey;
+    border-radius:5px;
+    width:45%;
+    padding:3rem;
+    margin:0 auto;
 }
 
 .one-third p {
@@ -266,5 +282,3 @@ input:focus, textarea:focus {
     -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
     }
 }
-
-
