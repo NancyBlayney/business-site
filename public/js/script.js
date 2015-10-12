@@ -1,10 +1,8 @@
 $( document ).ready(function() {
   
-  $(function(){
-      $('#nav').click(function() {
-        $(this).toggleClass('open');
-      });
-  });
+  $('#nav').click(function() {
+    $(this).toggleClass('open');
+    });
 
 	$('.bxslider').bxSlider({
   		mode: 'horizontal',
