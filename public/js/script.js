@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+  
+  $(function(){
+      $('#nav').click(function() {
+        $(this).toggleClass('open');
+      });
+  });
 
 	$('.bxslider').bxSlider({
   		mode: 'horizontal',
@@ -8,11 +14,5 @@ $( document ).ready(function() {
   		speed: 1000,
   		auto:true,
   		pause:2000
-	});
-
-	$(function(){
-  		$('#nav').click(function() {
-    		$(this).toggleClass('open');
-  		});
 	});
 });

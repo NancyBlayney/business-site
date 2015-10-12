@@ -1,9 +1,18 @@
+html {
+    background-color: #F0F0F5;
+}
+
+/* nav bar */
 .container {
   position: relative;
   margin: 0 auto;
   width: 94%;
   max-width: 960px;
   font-family: helvetica, sans-serif;
+}
+
+.content {
+  position: relative;
 }
 
 #header {
@@ -15,11 +24,10 @@
   color: white;
   margin-top: -0.5em;
 }
-span {
-    color: ;
-}
 
 h1 {
+    font-size: 4rem !important;
+    margin-top: 0.6rem !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -65,8 +73,8 @@ button {
     width:100%;
 }
 
-.bx-wrapper, .bx-viewport {
-    height: 450px !important; 
+.bx-wrapper, .bx-viewport, .bxslider img {
+    max-height: 350px !important; 
 }
 
 /* Home page styling*/
@@ -189,31 +197,30 @@ input:focus, textarea:focus {
     margin-left: 80px;
 }
 
-@media (max-width: 599px) {
-    #header {
-    .container { 
+@media (max-width: 700px) {
+    #header .container { 
         width: 100%; 
     }
-    h1 {
-      left: 3%;
-    }
-  }
+  
     #nav {
         width: 100%;
         top: 60px;
-        &:before {
-            content: '\2630';
-            display: block;
-            position: absolute;
-            right: 3%;
-            top: -50px;
-            line-height: 40px;
-            cursor: pointer;
+    }
+    #nav:before {
+        content: '\2630';
+        display: block;
+        position: absolute;
+        right: 3%;
+        top: -50px;
+        line-height: 40px;
+        cursor: pointer;
     }
 
     #nav ul {
+        display: none;
         background: #222;
         width: 100%;
+        height: 100%;
     }
 
     #nav ul li {
@@ -224,10 +231,21 @@ input:focus, textarea:focus {
         padding: 10px 3%;
         line-height: 20px;
         border-top: 1px solid #333;
+
     }
+    
+    .bxslider img {
+        margin:0 auto;
+        width:100%;
+    }
+
+    .bx-wrapper, .bx-viewport, .bxslider img {
+        max-height: 350px !important; 
+    }   
 
 /*Transition*/
   #nav ul {
+    display: none;
     transition: 350ms;
     -moz-transition: 350ms;
     -webkit-transition: 350ms;
@@ -238,8 +256,9 @@ input:focus, textarea:focus {
     -moz-transform-origin: 50% 0;
     -webkit-transform-origin: 50% 0;
   }
-  
-  #nav.open ul {
+
+  #nav .open ul {
+    display: block;
     transform: translateY(0px);
     -moz-transform: translateY(0px);
     -webkit-transform:  perspective(600) rotate3d(0,0,0,0);
