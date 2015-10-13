@@ -77,6 +77,10 @@ h1 a:active {
     opacity: 0.7;
 }
 
+.doctorimg {
+    width: 100%;
+}
+
 button {
     width:100%;
     display:inline-block;
