@@ -31,7 +31,29 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
+
+
+/* Elias Medical link to homepage */
+
+h1 a:link{
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:visited {
+    color: white;
+}
+
+h1 a:hover {
+    color: white;
+}
+
+h1 a:active {
+    color: white;
+}
+
+/* Elias Medical link to homepage */
 
 #nav {
   position: absolute;
