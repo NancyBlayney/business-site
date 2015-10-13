@@ -180,7 +180,7 @@ form {
 	margin: 2rem 0 0 0;
     border: 2px solid lightgrey;
     border-radius:5px;
-    width:45%;
+    width:65%;
     padding:3rem;
     margin:0 auto;
 }
@@ -206,7 +206,7 @@ input, textarea {
 }
 
 textarea {
-    width: 400px;
+    width: 95%;
     height: 150px;
     max-width: 400px;
     line-height: 18px;
@@ -309,3 +309,6 @@ input:focus, textarea:focus {
     -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
     }
 }
+
+
+
